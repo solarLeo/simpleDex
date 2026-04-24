@@ -1,0 +1,13 @@
+/cache/
+/out/
+/broadcast/
+/coverage/
+/.env
+/deployments/
+
+# Editors
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
