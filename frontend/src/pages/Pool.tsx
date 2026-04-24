@@ -1,6 +1,6 @@
 import { useAccount } from 'wagmi';
 import { formatUnits } from 'viem';
-import { CONTRACTS } from '../config/contracts';
+import { CONTRACTS } from '../config/contracts.generated';
 import { useDexReserves, useUserLiquidity, useTotalLiquidity } from '../hooks/useDexContract';
 import { useTokenSymbol } from '../hooks/useTokenContract';
 

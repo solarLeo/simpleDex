@@ -31,7 +31,7 @@ npm install
 
 ### 2. 配置合约地址
 
-编辑 [src/config/contracts.ts](src/config/contracts.ts)，更新为你的实际部署地址：
+编辑 [src/config/contracts.generated.ts](src/config/contracts.generated.ts)，更新为你的实际部署地址：
 
 ```typescript
 export const CONTRACTS = {

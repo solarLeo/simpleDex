@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useAccount } from 'wagmi';
 import { formatUnits } from 'viem';
-import { CONTRACTS } from '../config/contracts';
+import { CONTRACTS } from '../config/contracts.generated';
 import { useAddLiquidity, usePreviewAddLiquidity, useDexReserves } from '../hooks/useDexContract';
 import { useTokenBalance, useTokenAllowance, useApproveToken } from '../hooks/useTokenContract';
 

@@ -18,7 +18,7 @@ SIMPLE_DEX_ABI=$(cat out/SimpleDex.sol/SimpleDex.json | jq -c '.abi')
 ERC20_ABI=$(cat out/MockERC20.sol/MockERC20.json | jq -c '.abi')
 
 # 生成 TypeScript 配置文件
-cat > frontend/src/config/contracts.generated.ts << EOF
+cat > frontend/src/config/contracts.generated.generated.ts << EOF
 // 此文件由 scripts/generate-abi.sh 自动生成
 // 请勿手动编辑
 
@@ -34,7 +34,7 @@ export const SIMPLE_DEX_ABI = ${SIMPLE_DEX_ABI} as const;
 export const ERC20_ABI = ${ERC20_ABI} as const;
 EOF
 
-echo "✅ ABI 已生成到 frontend/src/config/contracts.generated.ts"
+echo "✅ ABI 已生成到 frontend/src/config/contracts.generated.generated.ts"
 echo ""
 echo "包含的 ABI 条目："
 echo "  - SimpleDex: $(echo $SIMPLE_DEX_ABI | jq '. | length') 个"

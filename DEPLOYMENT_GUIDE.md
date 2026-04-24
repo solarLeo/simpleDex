@@ -67,7 +67,7 @@ cat broadcast/DeploySimpleDex.s.sol/31337/run-latest.json | grep contractAddress
 
 ## 第五步：配置前端
 
-编辑 [frontend/src/config/contracts.ts](frontend/src/config/contracts.ts)：
+编辑 [frontend/src/config/contracts.generated.ts](frontend/src/config/contracts.generated.ts)：
 
 ```typescript
 export const CONTRACTS = {
@@ -186,7 +186,7 @@ npm run dev
 - [script/DeploySimpleDex.s.sol](script/DeploySimpleDex.s.sol) - 部署脚本
 
 **前端端：**
-- [frontend/src/config/contracts.ts](frontend/src/config/contracts.ts) - 合约地址和 ABI
+- [frontend/src/config/contracts.generated.ts](frontend/src/config/contracts.generated.ts) - 合约地址和 ABI
 - [frontend/src/hooks/useDexContract.ts](frontend/src/hooks/useDexContract.ts) - DEX 交互逻辑
 - [frontend/src/pages/Swap.tsx](frontend/src/pages/Swap.tsx) - 交换界面
 

@@ -1,5 +1,5 @@
 import { useReadContract, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
-import { CONTRACTS, SIMPLE_DEX_ABI } from '../config/contracts';
+import { CONTRACTS, SIMPLE_DEX_ABI } from '../config/contracts.generated';
 import { parseUnits } from 'viem';
 
 export function useDexReserves() {
